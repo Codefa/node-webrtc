@@ -1,6 +1,7 @@
 var module = require('./node-pre-gyp-publish-github');
 var program = require('commander');
-var package_json = require('../package.json');
+var path = require('path');
+var package_json = require(path.join(process.cwd(), 'package.json'));
 
 program
 	.command('publish [options]')

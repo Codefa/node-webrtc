@@ -6,21 +6,21 @@
     "p2p",
     "peer"
   ],
-  "version": "0.5.0",
+  "version": "0.5.1",
   "author": "Alan K <ack@modeswitch.org> (http://blog.modeswitch.org)",
   "homepage": "https://github.com/koush/node-webrtc",
   "bugs": "https://github.com/koush/node-webrtc/issues",
   "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
-    "url": "http://github.com/corwin-of-amber/node-webrtc.git"
+    "url": "http://github.com/koush/node-webrtc.git"
   },
   "main": "lib/index.js",
   "browser": "lib/browser.js",
   "binary": {
     "module_name": "wrtc",
     "module_path": "./build/Release/{napi_build_version}/..",
-    "host": "https://github.com/corwin-of-amber/node-webrtc/releases/download/",
+    "host": "https://github.com/koush/node-webrtc/releases/download/",
     "remote_path": "v{version}",
     "package_name": "{module_name}-v{version}-napi-v{napi_build_version}-{platform}-{arch}.tar.gz",
     "napi_versions": [

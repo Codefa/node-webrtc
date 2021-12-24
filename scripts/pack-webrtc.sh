@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=$(node -p "require('$(dirname $0)/../package.json').version")
+version=v$(node -p "require('$(dirname $0)/../phase-1/package.json').version")
 platform=$(uname -s | tr '[A-Z]' '[a-z]')
 arch=${TARGET_ARCH:-$(uname -m | tr '[A-Z]' '[a-z]')}
 

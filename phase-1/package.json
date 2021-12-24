@@ -1,18 +1,18 @@
 {
-  "name": "wrtc-bin",
-  "version": "0.0.0",
+  "name": "@koush/wrtc",
+  "version": "0.5.1",
   "repository": {
     "type": "git",
-    "url": "http://github.com/corwin-of-amber/node-webrtc.git"
+    "url": "http://github.com/koush/node-webrtc.git"
   },
   "binary": {
     "module_name": "wrtc",
     "module_path": "./build/external/libwebrtc/build/Release",
-    "host": "https://github.com/corwin-of-amber/node-webrtc/releases/download/",
+    "host": "https://github.com/koush/node-webrtc/releases/download/",
     "remote_path": "v{version}"
   },
   "scripts": {
     "build": "cross-env LIBNAME=libwebrtc ../scripts/build-from-source.js",
-    "publish": "node ../install/publish publish"
+    "node-pre-gyp-publish": "node ../install/publish publish"
   }
 }

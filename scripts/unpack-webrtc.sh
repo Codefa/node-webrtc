@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=$(node -p "require('$(dirname $0)/../package.json').version")
+version=$(node -p "require('$(dirname $0)/../phase-1/package.json').version")
 platform=$(uname -s | tr '[A-Z]' '[a-z]')
 arch=${TARGET_ARCH:-$(uname -m | tr '[A-Z]' '[a-z]')}
 
@@ -10,7 +10,7 @@ if [ -e $(dirname $0)/../phase-1/build/stage/${version}/${asset} ]; then
   cp $(dirname $0)/../phase-1/build/stage/${version}/${asset} .
 fi
 
-BASE_URL=https://github.com/corwin-of-amber/node-webrtc/releases/download
+BASE_URL=https://github.com/koush/node-webrtc/releases/download
 
 set -e
 
