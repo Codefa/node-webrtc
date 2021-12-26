@@ -31,7 +31,7 @@
     "node": "^8.11.2 || >=10.0.0"
   },
   "dependencies": {
-    "@mapbox/node-pre-gyp": "^1.0.4",
+    "@mapbox/node-pre-gyp": "^1.0.8",
     "nan": "^2.3.2",
     "node-addon-api": "^1.6.2",
     "node-cmake": "2.3.2"
@@ -47,7 +47,8 @@
     "cross-env": "^5.2.1",
     "eslint": "^4.14.0",
     "express": "^4.16.2",
-    "force-py2": "^0.1.1",
+    "findit": "^2.0.0",
+    "findit2": "^2.2.3",
     "js-yaml": "^3.13.0",
     "jsdom": "^15.0.0",
     "karma": "^4.0.1",
@@ -81,7 +82,8 @@
     "install-example": "node scripts/install-example.js",
     "lint": "eslint lib/*.js lib/**/*.js test/*.js test/**/*.js karma/*.js scripts/*.js",
     "node-pre-gyp-package": "rimraf build/Release/obj.target && rimraf build/Release/.deps && node-pre-gyp package",
-    "prenode-pre-gyp-publish": "npm run node-pre-gyp-package -- --target_arch=$TARGET_ARCH",
+    "prenode-pre-gyp-publish": "npm run node-pre-gyp-package",
+    "prenode-pre-gyp-publish-arch": "npm run node-pre-gyp-package -- --target_arch=$TARGET_ARCH",
     "node-pre-gyp-publish": "node ./install/publish publish",
     "test": "node --expose-gc test/all.js",
     "test:browsers": "cross-env BROWSER=chrome node scripts/karma.js && cross-env BROWSER=firefox node scripts/karma.js",

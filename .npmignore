@@ -1,3 +1,5 @@
+src
+test
 *\~
 *.swp
 .idea
@@ -9,5 +11,15 @@ npm-debug.log*
 package-lock.json
 yarn.lock
 third_party
-.travis.yml
+packages
+phase-1
+npm
+docs
+.*
+karma
+etc
+appveyor.yml
+install
 *.tgz
+CHANGELOG.md
+AUTHORS
