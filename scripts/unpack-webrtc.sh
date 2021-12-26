@@ -7,6 +7,7 @@ arch=${TARGET_ARCH:-$(uname -m | tr '[A-Z]' '[a-z]')}
 asset=libwebrtc-${platform}-${arch}.tar.gz
 
 if [ -e $(dirname $0)/../phase-1/build/stage/${version}/${asset} ]; then
+  echo Using asset from phase-1/build/stage/${version}/${asset}
   cp $(dirname $0)/../phase-1/build/stage/${version}/${asset} .
 fi
 
