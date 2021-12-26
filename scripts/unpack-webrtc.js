@@ -3,11 +3,7 @@
 const os = require('os');
 const path = require('path');
 const fs = require('fs');
-const mkdirp = require('mkdirp');
-const findit = require('findit2');
-const { once } = require('events');
 const tar = require('tar');
-const rimraf = require('rimraf');
 const fetch = require('node-fetch')
 
 const version = 'v' + require(path.join(__dirname, '../phase-1/package.json')).version;
