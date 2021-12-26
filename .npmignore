@@ -16,8 +16,6 @@ phase-1
 npm
 docs
 .*
-CMakeLists.txt
-NodeJS.cmake
 karma
 etc
 appveyor.yml
