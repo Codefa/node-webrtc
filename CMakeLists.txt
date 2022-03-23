@@ -143,6 +143,10 @@ set_target_properties(libc++abi PROPERTIES IMPORTED_OBJECTS_DEBUG "${libc++abi_o
 set(WEBRTC_REVISION branch-heads/4707)
 
 list(APPEND GN_GEN_ARGS
+  ffmpeg_branding=Chrome
+  proprietary_codecs = true
+  rtc_use_h264=true
+  rtc_initialize_ffmpeg=true
   rtc_build_examples=false
   rtc_use_x11=false
   rtc_enable_protobuf=false
