@@ -89,8 +89,5 @@ Promise.all([subPromise, abseilPromise, libyuvPromise]).then(([_, abseil, libyuv
         gzip: true,
         cwd: outDir,
         file: tarpath,
-    }, ['.'])
-    .then(() => {
-        throw new Error("derp");
-    });
+    }, ['.']);
 });
